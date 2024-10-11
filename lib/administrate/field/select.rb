@@ -32,6 +32,10 @@ module Administrate
         options.fetch(:selected, nil)
       end
 
+      def max_items
+        options.fetch(:max_items, nil)
+      end
+
       def active_record_enum?
         resource.class.defined_enums.key?(attribute.to_s)
       end
